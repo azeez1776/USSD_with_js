@@ -17,18 +17,25 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     let { sessionId, serviceCode, phoneNumber, text } = req.body;
 
-    if (text === '') {
+    if (text == '') {
 
-        let response = `CON get free unlimited internet for a week
+        let response = `CON Get free unlimited internet for a week
         1.YES
-        2.NO
-        `
+        2.NO`
+
         res.send(response);
     }
 
-    else if (text === '1') {
+    else if (text == '1') {
 
-        let response = `Kijana pambana hamna cha bure`
+        let response = `END Kijana pambana hamna cha bure`
+
+        res.send(response);
+    }
+
+    else if (text == '2') {
+
+        let response = `END Good, you are on the right path`
 
         res.send(response);
     }
