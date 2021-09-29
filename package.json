@@ -2,15 +2,20 @@
   "name": "USSD_with_js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start":"node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "USSD",
+    "NODE"
+  ],
+  "author": "Samatar Abdi, aboud3am81@gmail.com",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "morgan": "^1.10.0"
   }
 }
+
